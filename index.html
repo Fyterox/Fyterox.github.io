@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-theme="default">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayush Kumar · Terminal</title>
+  <meta name="description" content="Ayush Kumar, CS at BITS Pilani. Deepfake detection, LLM guardrails, low-resource MT and formal verification. A portfolio you browse like a Linux shell.">
+  <meta property="og:title" content="Ayush Kumar · Terminal">
+  <meta property="og:description" content="CS @ BITS Pilani · Project Intern @ C-DAC · Incoming SWE Intern @ Stripe. Type `help`.">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0f14'/%3E%3Ctext x='10' y='42' font-family='monospace' font-size='30' font-weight='700' fill='%237ee787'%3E%3E_%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="Ayush Kumar · blog" href="feed.xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="window">
+    <header class="titlebar">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="title" id="title">guest@ayush: ~</span>
+      <span class="dots-spacer" aria-hidden="true"></span>
+    </header>
+
+    <nav class="quickbar" aria-label="Quick commands">
+      <button type="button" class="cmd" data-cmd="help">help</button>
+      <button type="button" class="cmd" data-cmd="about">about</button>
+      <button type="button" class="cmd" data-cmd="projects">projects</button>
+      <button type="button" class="cmd" data-cmd="blog">blog</button>
+      <button type="button" class="cmd" data-cmd="experience">experience</button>
+      <button type="button" class="cmd" data-cmd="skills">skills</button>
+      <button type="button" class="cmd" data-cmd="achievements">achievements</button>
+      <button type="button" class="cmd" data-cmd="contact">contact</button>
+      <button type="button" class="cmd" data-cmd="resume">resume</button>
+    </nav>
+
+    <main class="terminal" id="terminal">
+      <div id="output" role="log" aria-label="Terminal output"></div>
+      <form id="prompt-line" class="line prompt-line" autocomplete="off">
+        <label for="cmd" class="prompt"><span class="p-user">guest</span><span class="p-at">@</span><span class="p-host">ayush</span><span class="p-at">:</span><span class="p-path" id="prompt-path">~</span><span class="p-at">$</span></label>
+        <input id="cmd" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" enterkeyhint="go" aria-label="Type a command">
+      </form>
+    </main>
+
+    <footer class="statusbar" aria-hidden="true">
+      <span class="sb-session">[portfolio]</span>
+      <span class="sb-win">0:bash*</span>
+      <span class="sb-fill"></span>
+      <span class="sb-hint">tab: complete · ↑↓: history · ctrl+l: clear</span>
+      <span class="sb-clock" id="clock"></span>
+    </footer>
+  </div>
+
+  <noscript>
+    <div class="noscript">
+      <h1>Ayush Kumar</h1>
+      <p>CS @ BITS Pilani (CGPA 10.00, Institute Rank 1) · Project Intern @ C-DAC · Incoming SWE Intern @ Stripe.</p>
+      <p><a href="https://github.com/Fyterox">GitHub</a> · <a href="https://www.linkedin.com/in/ayush-kumar-aa36a0245/">LinkedIn</a> · <a href="Ayush_Kumar_Resume.pdf">Resume (PDF)</a></p>
+    </div>
+  </noscript>
+
+  <script src="main.js"></script>
+</body>
+</html>
